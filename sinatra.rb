@@ -324,12 +324,12 @@ __END__
   <h1>Main Menu</h1>	
   
   </div>
-  <div data-role="main" class="ui-content" data-theme="c">
+  <div data-role="main" class="ui-content" data-theme="b">
       <ul data-role="listview" data-inset="true">
-      <li data-theme="c"><a href="/mobile">Consumer / Mobile Wallet</a></li>
-	<li data-theme="c"><a href="/bank">Bank</a></li>
-      <li data-theme="c"><a href="/mint">Mint</a></li>
-      <li data-theme="c"><a href="/central_bank">Central Bank</a></li>
+      <li data-theme="b"><a href="/mobile">Consumer / Mobile Wallet</a></li>
+	<li data-theme="b"><a href="/bank">Bank</a></li>
+      <li data-theme="b"><a href="/mint">Mint</a></li>
+      <li data-theme="b"><a href="/central_bank">Central Bank</a></li>
 </ul> 
     
   </div>
@@ -473,7 +473,7 @@ __END__
       <li> Balance: <span style="font-size:20px;font-weight:bold;";>$<%=@balance%></span> 
 <center><div data-role="controlgroup" data-type="horizontal" data-mini="true" >
       
-        <a href="/mint_create/mint" data-theme="c" data-role="button" data-icon="plus" data-mini="true" data-iconpos="right">Mint Currency</a>
+        <a href="/mint_create/mint" data-theme="b" data-role="button" data-icon="plus" data-mini="true" data-iconpos="right">Mint Currency</a>
     
       </div></center>
  </li>     
@@ -504,7 +504,7 @@ __END__
   
   </div>
     <form action="/mobile_login" method="post">
-         <div data-role="main" class="ui-content" data-theme="c">
+         <div data-role="main" class="ui-content" data-theme="b">
       <p>Log in as:</p> 
       <div data-role="fieldcontain">
         <label for="id" class="select">Name:</label>
@@ -536,7 +536,7 @@ __END__
 <a href="/mobile_login" data-icon="arrow-r" data-mini="true" data-iconpos="right">Logout</a>  
   
   </div>
-  <div data-role="main" class="ui-content" data-theme="c">
+  <div data-role="main" class="ui-content" data-theme="b">
     <p>Transactions: </p>
     <ul data-role="listview" data-theme="g">
      <%@trans.each{|item|%>
@@ -558,7 +558,7 @@ __END__
 <a href="/mobile_login" data-icon="arrow-r" data-mini="true" data-iconpos="right">Logout</a>  
   
   </div>
-  <div data-role="main" class="ui-content" data-theme="c">
+  <div data-role="main" class="ui-content" data-theme="b">
       <p>Scan new recipient: </p>  
     <a data-theme="e" data-role="button" href="/mobile_pay/<%=@wallet%>/coffee" data-icon="video" data-mini="true" data-iconpos="right">Scan</a>  
     
@@ -584,7 +584,7 @@ __END__
 <a href="/mint" data-icon="home" data-mini="true">Home</a>
 				<h1>Mint</h1>	
   </div>
-  <div data-role="main" class="ui-content" data-theme="c">
+  <div data-role="main" class="ui-content" data-theme="b">
     
 		<p>Choose target Bank: </p>
       <ul data-role="listview" data-theme="d">
@@ -612,7 +612,7 @@ __END__
 <a href="/mobile_login" data-icon="arrow-r" data-mini="true" data-iconpos="right">Logout</a>  
   
   </div>
-  <div data-role="main" class="ui-content" data-theme="c">
+  <div data-role="main" class="ui-content" data-theme="b">
     <p>Welcome: <%=@firstname%> <%=@surname%></p>
   </div>
      
@@ -630,9 +630,9 @@ __END__
       <li> Balance: <span style="font-size:20px;font-weight:bold;";>$<%=@balance%></span> 
 <center><div data-role="controlgroup" data-type="horizontal" data-mini="true" >
       
-    <a href="/mobile_topup/<%=@wallet%>" data-theme="c" data-role="button" data-icon="plus" data-mini="true" data-iconpos="right">Top Up</a>
-      <a href="/mobile_withdraw/<%=@wallet%>" data-theme="c" data-role="button" data-icon="minus" data-mini="true" data-iconpos="right">Withdraw</a>
-     <a href="/mobile_trans/<%=@wallet%>" data-theme="c" data-role="button" data-icon="info" data-mini="true" data-iconpos="right">History</a>
+    <a href="/mobile_topup/<%=@wallet%>" data-theme="b" data-role="button" data-icon="plus" data-mini="true" data-iconpos="right">Top Up</a>
+      <a href="/mobile_withdraw/<%=@wallet%>" data-theme="b" data-role="button" data-icon="minus" data-mini="true" data-iconpos="right">Withdraw</a>
+     <a href="/mobile_trans/<%=@wallet%>" data-theme="b" data-role="button" data-icon="info" data-mini="true" data-iconpos="right">History</a>
 
       </div></center>
  </li>     
@@ -773,14 +773,15 @@ __END__
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
-<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />
+<link rel="stylesheet" href="css/themes/theme1.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
     
  </head>
  <body>
    
-    <div data-role="page" data-theme="c"  style="background-image: url('http://subtlepatterns.com/patterns/crossword.png');" >
+    <div data-role="page" data-theme="b"  style="background-image: url('http://subtlepatterns.com/patterns/crossword.png');" >
 			
 			<%= yield %>
 </div> 
