@@ -325,11 +325,11 @@ __END__
   
   </div>
   <div data-role="main" class="ui-content" data-theme="c">
-      <ul data-role="listview" data-inset="true">
+      <ul data-role="listview" data-inset="true"  data-shadow="false">
       <li data-theme="c"><a href="/mobile">Consumer / Mobile Wallet</a></li>
 	<li data-theme="c"><a href="/bank">Bank</a></li>
       <li data-theme="c"><a href="/mint">Mint</a></li>
-      <li data-theme="c"><a href="/central_bank">Central Bank</a></li>
+			<li data-theme="c" ><a href="/central_bank">Central Bank</a></li>
 </ul> 
     
   </div>
