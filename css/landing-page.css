@@ -31,10 +31,10 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: black;
-	 background: url(../img/pattern8-pattern-43a.png);
-    background-repeat: repeat;
-    /*background: url(../img/intro-bg.jpg) no-repeat center center;*/
-    /*background-size: cover;*/
+	 
+   /* background-repeat: repeat;*/
+   background: url(../img/saw.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 .intro-message {
@@ -42,6 +42,15 @@ h6 {
     padding-top: 10%;
     padding-bottom: 10%;
 }
+
+
+@import 'bootstrap.less';
+div.my-con {
+    border-radius: 5px ;
+	  border:1px solid gray;
+	
+}
+
 
 .intro-message > h1 {
     margin: 0;

@@ -3,7 +3,7 @@ require 'mongo'
 include Mongo
 
 set :bind, '0.0.0.0'
-set  :port, 8888
+set  :port, 8080
 set :public_folder, File.dirname(__FILE__)+"/"
 
 get '/' do
@@ -61,7 +61,7 @@ __END__
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Easy opening hours</a>
+<a class="navbar-brand" href="#">TradeConnect</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -86,22 +86,37 @@ __END__
     <div class="intro-header">
 
         <div class="container">
-
+<div class="row">
+  <div class="col-lg-12">
+    <div class="input-group">
+    
+       
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" placeholder="Dublin">
+ 			<span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-12 -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h2>Local store store opening hours</h2>
-			<h3>Best place to find out local store opening hours</h3>
+<h2>Connecting Communites</h2>
+<h3>Connecting Tradesmen and local communities</h3>
                         <hr class="intro-divider">
 			
                         <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <input type="text" name="store" class="form-control" placeholder="Tesco">
-                            </li>
+													<div class="btn-group" >
+  													 <select class="my-con">
+    <option>Mustard</option>
+    <option>Ketchup</option>
+    <option>Relish</option>
+  </select>
+													</div>
                             <li>
                                  <input type="text" name="location" class="form-control" placeholder="Dublin"> </li>
                             <li>
-                                <button class="btn btn-large btn-primary" type="button">Search</button>     </li>
+                                <button class="btn btn-primary" type="button">Search</button>     </li>
                         </ul>
                     </div>
                 </div>
