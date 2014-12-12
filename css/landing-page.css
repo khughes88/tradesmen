@@ -30,11 +30,12 @@ h6 {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: black;
-	 
+    color: white;
+	 height:500px;
    /* background-repeat: repeat;*/
    background: url(../img/saw.jpg) no-repeat center center;
-    background-size: cover;
+    background-size: 100% 100%;
+	
 }
 
 .intro-message {
@@ -46,9 +47,26 @@ h6 {
 
 @import 'bootstrap.less';
 div.my-con {
-    border-radius: 5px ;
-	  border:1px solid gray;
-	
+    border-radius: 10px ;
+	   background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+	  
+}
+
+@media (max-width:768px){
+.btn, .btn-group, .select {width:100%;}	
+}
+
+.mybutton{
+	padding-top:20px;
+	padding-bottom:18px;
+	border:none;
+	outline:none;
+	-webkit-box-shadow:none !important; 
+	box-shadow:none !important;
+	moz-box-shadow:none !important;
 }
 
 
@@ -63,6 +81,7 @@ div.my-con {
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
 
 .intro-message > h3 {
     /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/

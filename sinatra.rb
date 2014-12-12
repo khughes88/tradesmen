@@ -27,8 +27,10 @@ __END__
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Get local opening hours</title>
+    <title>TradeCommunities</title>
 
+    
+ 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -45,7 +47,7 @@ __END__
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+  
 </head>
 
 <body>
@@ -82,51 +84,50 @@ __END__
         <!-- /.container -->
     </nav>
 
-    <!-- Header -->
-    <div class="intro-header">
-
-        <div class="container">
 <div class="row">
-  <div class="col-lg-12">
+  <div class="col-lg-6">
     <div class="input-group">
-    
-       
-      </div><!-- /btn-group -->
-      <input type="text" class="form-control" placeholder="Dublin">
- 			<span class="input-group-btn">
+      <span class="input-group-btn">
         <button class="btn btn-default" type="button">Go!</button>
       </span>
+      <input type="text" class="form-control">
     </div><!-- /input-group -->
-  </div><!-- /.col-lg-12 -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-<h2>Connecting Communites</h2>
-<h3>Connecting Tradesmen and local communities</h3>
-                        <hr class="intro-divider">
-			
-                        <ul class="list-inline intro-social-buttons">
-													<div class="btn-group" >
-  													 <select class="my-con">
-    <option>Mustard</option>
-    <option>Ketchup</option>
-    <option>Relish</option>
-  </select>
-													</div>
-                            <li>
-                                 <input type="text" name="location" class="form-control" placeholder="Dublin"> </li>
-                            <li>
-                                <button class="btn btn-primary" type="button">Search</button>     </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  </div><!-- /.col-lg-6 -->
 
-        </div>
-        <!-- /.container -->
 
-    </div>
-    <!-- /.intro-header -->
+
+<!-- Header -->
+<div class="intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+	<div class="intro-message">
+	
+	  <h2>Connecting Communites</h2>
+	  <h3>Connecting Tradesmen and local communities</h3>
+	    			
+	     <form class="navbar-form" role="search">
+	      <div class="form-group">
+		   <select class="form-control input input-lg" id="sel1" style="margin-bottom:2px;">
+		  <option>Plumber</option>
+		  <option>Electrician</option>
+		  <option>Mechanic</option>
+		  <option>Builder</option>
+		</select>
+		<input type="text" class="form-control  input input-lg" placeholder="Dublin">
+	      <button type="submit" class="btn btn-lg mybutton"   >
+	      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+	      </button0
+	    </div>
+	    </form> 
+		
+		
+	     
+	  </div><!-- /.intro-message -->
+	</div><!-- /.col-lg-12 -->
+    </div><!--/.row-->
+  </div><!-- /.container -->
+</div><!-- /.intro-header -->
 
     <!-- Page Content -->
 
