@@ -114,8 +114,8 @@ __END__
 		  <option>Mechanic</option>
 		  <option>Builder</option>
 		</select>
-		<input type="text" class="form-control  input input-lg" placeholder="Dublin">
-	      <button type="submit" class="btn btn-lg mybutton"   >
+		<input type="text" class="form-control  input input-lg" placeholder="Dublin" style="margin-bottom:2px;">
+	      <button type="submit" class="btn btn-lg mybutton"  style="margin-bottom:2px;" >
 	      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 	      </button0
 	    </div>

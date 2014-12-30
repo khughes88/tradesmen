@@ -5,11 +5,14 @@ include Mongo
 
 @client=MongoClient.new('localhost',27017)
 @db=@client['oo']
-@hours=@db['hours']
+@towns=@db['towns']
 
+shop='Tesco'
+ p shop
+tryme=@towns.find_one({'name'=>shop})
+p tryme
+if !tryme then
 
-data=Hash.new
-data['url']=nil
-@hours.update({'shop'=>/Costa/},{"$set"=>data})
+p @towns.insert({'name'=>shop})
 
-
+end
